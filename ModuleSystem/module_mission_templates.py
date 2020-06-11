@@ -2039,7 +2039,7 @@ mission_templates = [ # not used in game
      (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
-    tld_common_wb_muddy_water +
+    tld_common_wb_muddy_water + reward_birds_wb + 
     formations_triggers + AI_triggers +   common_deathcam_triggers + moto_formations_triggers +  tld_common_battle_scripts + command_cursor_sub_mod + [
 	common_battle_tab_press,
 	common_music_situation_update,

@@ -3027,4 +3027,50 @@ scene_props = [
 ("save_compartibility19",0,"0","0", []),
 ("save_compartibility20",0,"0","0", []),
 
+	
+#Ruthven - CWE props 
+  ("birds_crebain", sokf_moveable|sokf_dynamic_physics, "woron_flight", "0", [
+    (ti_on_scene_prop_init,[
+      (store_trigger_param_1, ":var0"),
+      (assign, ":var1", 25),
+      (scene_prop_set_slot, ":var0", 40, ":var1"),
+      (val_add, ":var1", 1),
+      (store_random_in_range, ":var2", 1, ":var1"),
+      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_random_in_range, ":var3", 0, 16),
+      (val_mul, ":var3", 80),
+      (scene_prop_set_slot, ":var0", 39, ":var3"),
+      (scene_prop_set_slot, ":var0", 42, 8),
+      (scene_prop_set_slot, ":var0", 43, 11),
+      (scene_prop_set_slot, ":var0", 44, -1),
+    ]),
+
+    # (ti_on_scene_prop_hit,[
+      # (store_trigger_param_1, ":var0"),
+      # (call_script, "script_sa_flying_birds_hit", ":var0"),
+    # ]),
+  ]),
+
+  ("birds_thrush", sokf_moveable|sokf_dynamic_physics, "golub_flight", "0", [
+    (ti_on_scene_prop_init,[
+      (store_trigger_param_1, ":var0"),
+      (assign, ":var1", 26),
+      (scene_prop_set_slot, ":var0", 40, ":var1"),
+      (val_add, ":var1", 1),
+      (store_random_in_range, ":var2", 1, ":var1"),
+      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_random_in_range, ":var3", 0, 16),
+      (val_mul, ":var3", 80),
+      (scene_prop_set_slot, ":var0", 39, ":var3"),
+      (scene_prop_set_slot, ":var0", 42, 9),
+      (scene_prop_set_slot, ":var0", 43, 12),
+      (scene_prop_set_slot, ":var0", 44, -1),
+    ]),
+    ]),
+
+  
+  ("birds_end", sokf_moveable|sokf_dynamic_physics, "woron_flight", "bo_woron_flight", [  ]),
+
+
+	
 ]
